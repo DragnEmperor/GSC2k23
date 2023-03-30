@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.main-heading{
+    font-family: 'Rubik Distressed', cursive;
+}
+.section-scrollbar::-webkit-scrollbar{
+    width: 6px;
+    height: 20px;
+}
+.section-scrollbar::-webkit-scrollbar-track {
+    height: 100px;
+  }
+  
+  /* Handle */
+  .section-scrollbar::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 4px;
+    height: 1px;
+  }
+
+.heading-font{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Handle on hover */
+  .section-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
