@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import TeamCard from "../../components/TeamCard/teamCard";
 import { useLocation } from "@reach/router";
-import { teamData } from "../data";
+import { teamData } from "../../data/data";
 
 const AboutUs = () => {
     const location = useLocation()

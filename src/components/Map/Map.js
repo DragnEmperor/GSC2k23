@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import ExpandedCard from '../travelCard/expandedCard';
-import { places } from '../../pages/data';
 
 const Map =(props)=>{
 //   constructor(props) {
@@ -20,7 +19,7 @@ const Map =(props)=>{
   const [selectedLocation, setSelectedLocation] = useState(null);
 
   useEffect(() => {
-    const map = L.map('map').setView([props.latitude, props.longitude], 15);
+    const map = L.map('map').setView([props.latitude, props.longitude], 18);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; OpenStreetMap contributors',
       maxZoom: 18,
@@ -54,7 +53,7 @@ const Map =(props)=>{
   // }
 
     return (
-      <div className='max-w-7xl mx-6 md:mx-auto py-32'>
+      <div className='max-w-7xl mx-6 md:mx-auto pt-32 pb-16'>
         <div id="map" className='rounded-2xl mx-auto w-4/5 h-[20rem]'></div>
       </div>
     );

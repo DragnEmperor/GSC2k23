@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Merriweather&display=swap');
 
 .main-heading{
     font-family: 'Rubik Distressed', cursive;

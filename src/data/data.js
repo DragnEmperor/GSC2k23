@@ -1,63 +1,80 @@
 export const places = [
     {
-        name: "place1",
-        img: "/images/places/place1.jpg",
+        name: "Bir",
+        img: "/images/places/bir.jpeg",
         webp: "/images/places/webp/place1.webp",
         stats: 1200,
         latitude: "32.0441412",
         longitude: "76.7191923",
-        route: "/locations/place1"
+        route: "/locations/birhp",
+        locked:false
     },
     {
         name: "place2",
         img: "/images/places/place2.jpg",
         webp: "/images/places/webp/place2.webp",
         stats: 1100,
-        route: "/locations/place2"
+        route: "/locations/place2",
+        locked:true,
     },
     {
         name: "place3",
         img: "/images/places/place3.jpg",
         webp: "/images/places/webp/place3.webp",
         stats: 12800,
-        route: "/locations/place3"
+        route: "/locations/place3",
+        locked: true
     }
 ]
 
 
 export const vendorData = [
     {
-        place: "place1",
+        place: "birhp",
         vendors: [
             {
-                name: "vendor1",
-                img: "/images/places/place1.jpg",
+                name: "Winged up paragliding",
+                img: "/images/places/birhp/winged.jpg",
                 webp: "/images/places/webp/place1.webp",
                 stats: 12100,
-                vendor: "Aman",
+                vendor: "Phone",
                 price: "Rs.1200",
-                vendorPhone: "1234567890",
-                route: "/locations/place1/vendor1?latitude=32.0441412&longitude=76.7191923"
+                vendorPhone: "080912 94140",
+                route: "/locations/birhp/wingedpara?latitude=32.0377764&longitude=76.7130436",
+                address:"Near Zhim Zhim guest house, Bir Colony, Bir, Himachal Pradesh 176077"
             },
             {
-                name: "vendor2",
-                img: "/images/places/place2.jpg",
+                name: "Mills peak adventures",
+                img: "/images/places/birhp/mills.jpg",
                 webp: "/images/places/webp/place2.webp",
                 stats: 11800,
-                vendor: "Hagrim",
+                vendor: "Phone",
                 price: "Rs.11100",
-                vendorPhone: "1234567890",
-                route: "/locations/place1/vendor2?latitude=32.0441412&longitude=76.7191923"
+                vendorPhone: "082195 24810",
+                route: "/locations/birhp/millsadventures?latitude=32.0435676&longitude=76.7062634",
+                address:"Adv Landing Site, Satish Kumar Mills Peak, Road, Bir Colony, Suja, Himachal Pradesh 176077"
             },
             {
-                name: "vendor3",
-                img: "/images/places/place3.jpg",
+                name: "Paragliding Landing Zone",
+                img: "/images/places/birhp/paraland.jpg",
                 webp: "/images/places/webp/place3.webp",
                 stats: 15080,
-                vendor: "Pandu",
+                vendor: "Phone",
                 price: "Rs.1300",
-                vendorPhone: "1234567890",
-                route: "/locations/place1/vendor3?latitude=32.0441412&longitude=76.7191923"
+                vendorPhone: "08544794593",
+                route: "/locations/birhp/paraglidinglandingzone?latitude=32.0421254&longitude=76.7082904",
+                address : "Chaugan - Sansal Rd, Bir Colony, Suja, Himachal Pradesh 176077"
+            },
+            {
+                name: "ParaBooking",
+                img: "/images/places/birhp/parabook.jpg",
+                webp: "/images/places/webp/place3.webp",
+                stats: 15080,
+                vendor: "Phone",
+                price: "Rs.1300",
+                vendorPhone: "08544794593",
+                route: "/locations/birhp/parabooking?latitude=32.0332761&longitude=76.7187079",
+                address : "The HANGAR, VPO, Bir - Matru Rd, opposite Garden Cafe, near Chowgan, Chowk, Bir, Himachal Pradesh 176077"
             }
         ]
     },

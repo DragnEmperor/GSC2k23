@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../../components/layout";
 import ExpandedCard from "../../../components/travelCard/expandedCard";
-import { vendorData } from "../../data";
+import { vendorData } from "../../../data/data";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
 
