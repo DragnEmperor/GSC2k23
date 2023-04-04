@@ -53,8 +53,8 @@ const Map =(props)=>{
   // }
 
     return (
-      <div className='max-w-7xl mx-6 md:mx-auto pt-32 pb-16'>
-        <div id="map" className='rounded-2xl mx-auto w-4/5 h-[20rem]'></div>
+      <div className='max-w-7xl mx-6 md:mx-auto pt-32 pb-16 z-[50]'>
+        <div id="map" className='rounded-2xl mx-auto w-4/5 h-[20rem] z-[50]'></div>
       </div>
     );
 }

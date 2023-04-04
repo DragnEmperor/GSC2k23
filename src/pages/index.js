@@ -11,7 +11,7 @@ import TravelCard from "../components/travelCard/travelCard"
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
-  <Layout>
+  <Layout navbar={"white"}>
     <div className="overflow-hidden">
       <picture className="block fixed z-[-5] opacity-[0.8]">
         <source srcSet="/images/webp/bg.webp" type="image/webp" />
@@ -21,7 +21,7 @@ const IndexPage = () => (
           alt="hero-bg"
         />
       </picture>
-      <div className="absolute h-screen bg-black/50 w-screen">
+      <div className="absolute h-screen bg-black/20 w-screen">
                 {/* Your content here */}
       </div>
       <div className="relative h-screen flex flex-row">
@@ -38,9 +38,11 @@ const IndexPage = () => (
             </div>
             <div className="overflow-y-visible overflow-x-hidden h-1/2 section-scrollbar">
               {places.map((place, index) => (
-                <Link to={place.route}  key={index}>
+                 <div className={" " + (place.locked ? " pointer-events-none " : "")} key={index}>
+                <Link to={place.route}>
                 <TravelCard place={place} />
                 </Link>
+                </div>
               ))
               }
             </div>
@@ -56,6 +58,6 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+// export const Head = () => <Seo title="Home" />
 
 export default IndexPage

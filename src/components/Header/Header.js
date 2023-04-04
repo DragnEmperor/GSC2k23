@@ -8,7 +8,6 @@ import { Location } from "@reach/router";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./nav.css";
-// Constants, JSONs and Assests
 
 class Navbar extends Component {
   state = {
@@ -20,7 +19,9 @@ class Navbar extends Component {
   };
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener("scroll", this.handleScroll);
+    }
     this.props.navbar=='white'?this.setState({newColor:true}):this.setState({newColor:false})
   }
   handleScroll = () => {
@@ -28,14 +29,16 @@ class Navbar extends Component {
       scrollPos: document.body.getBoundingClientRect().top,
       show: document.body.getBoundingClientRect().top > this.state.scrollPos,
     });
-    if (window.pageYOffset > 10) {
-      this.setState({
-        isBg: true,
-      });
-    } else {
-      this.setState({
-        isBg: false,
-      });
+    if (typeof window !== 'undefined') {
+      if (window.pageYOffset > 10) {
+        this.setState({
+          isBg: true,
+        });
+      } else {
+        this.setState({
+          isBg: false,
+        });
+      }
     }
   };
    
@@ -62,7 +65,7 @@ class Navbar extends Component {
     return (
       <React.Fragment>
           {/* Desktop View starts */}
-        <nav className={"hidden heading-font lg:block fixed w-full h-10 z-50 opacity-90 top-0 text-black"} id="navColour">
+        <nav className={"hidden heading-font lg:block fixed w-full h-10 z-[100] opacity-90 top-0 text-black"} id="navColour">
           <div className={"hidden lg:flex w-full navbar-testing " + (this.state.isBg?" bg-white":"")} id="navBg">
             <img
               src="/images/logo.png"

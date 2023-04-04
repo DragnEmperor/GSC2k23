@@ -51,7 +51,7 @@ export const vendorData = [
                 vendor: "Phone",
                 price: "Rs.11100",
                 vendorPhone: "082195 24810",
-                route: "/locations/birhp/millsadventures?latitude=32.0435676&longitude=76.7062634",
+                route: "/locations/birhp/mills?latitude=32.0435676&longitude=76.7062634",
                 address:"Adv Landing Site, Satish Kumar Mills Peak, Road, Bir Colony, Suja, Himachal Pradesh 176077"
             },
             {
@@ -62,7 +62,7 @@ export const vendorData = [
                 vendor: "Phone",
                 price: "Rs.1300",
                 vendorPhone: "08544794593",
-                route: "/locations/birhp/paraglidinglandingzone?latitude=32.0421254&longitude=76.7082904",
+                route: "/locations/birhp/paraland?latitude=32.0421254&longitude=76.7082904",
                 address : "Chaugan - Sansal Rd, Bir Colony, Suja, Himachal Pradesh 176077"
             },
             {
@@ -73,7 +73,7 @@ export const vendorData = [
                 vendor: "Phone",
                 price: "Rs.1300",
                 vendorPhone: "08544794593",
-                route: "/locations/birhp/parabooking?latitude=32.0332761&longitude=76.7187079",
+                route: "/locations/birhp/parabook?latitude=32.0332761&longitude=76.7187079",
                 address : "The HANGAR, VPO, Bir - Matru Rd, opposite Garden Cafe, near Chowgan, Chowk, Bir, Himachal Pradesh 176077"
             }
         ]

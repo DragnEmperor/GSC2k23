@@ -9,8 +9,6 @@ const Vendor1 = ({ location }) => {
         const [key, value] = str.split('=');
         coordinates[key] = value;
     });
-
-    const vendor = location.state.vendor;
     console.log(location)
     return (
         <Layout navbar={'white'}>
@@ -22,13 +20,22 @@ const Vendor1 = ({ location }) => {
                     alt="hero-bg"
                 />
             </picture>
-            <div className="absolute h-screen bg-black/70 w-screen z-[-3]">
+            <div className="fixed h-screen bg-black/70 w-screen z-[-3]">
                 {/* Your content here */}
             </div>
             <Map latitude={coordinates.latitude} longitude={coordinates.longitude} />
-            <div className='max-w-7xl mx-auto'>
-                <div className='w-4/5 rounded-xl bg-white mx-auto'>
-                <h1 className="p-4 text-4xl font-['Merriweather'] font-extrabold">{vendor.name}</h1>
+            <div className='max-w-7xl mx-auto pb-20'>
+                <div className='w-4/5 rounded-xl bg-white mx-auto pb-16'>
+                    <h1 className="p-4 pt-12 text-4xl font-['Merriweather'] font-extrabold text-center">Winged up paragliding</h1>
+                    <div className='flex justify-center items-center flex-col gap-y-14'>
+                        <div className="grid grid-cols-2 w-1/2 text-black pt-20 gap-y-10 heading-font">
+                            <div>Address</div>
+                            <div class="mb-2 underline">Near Zhim Zhim guest house, Bir Colony, Bir, Himachal Pradesh 176077</div>
+                            <div>Phone</div>
+                            <div>080912 94140</div>
+                        </div>
+                        <button className='sm:mt-0 py-2 px-5 md:py-3 md:px-6 bg-purple-700 hover:bg-purple-600 font-bold text-white md:text-lg rounded-lg shadow-md'>Book Now</button>
+                    </div>
                 </div>
             </div>
         </Layout>

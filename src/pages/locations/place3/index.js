@@ -9,7 +9,6 @@ const Locations = () => {
     const location = useLocation()
     .pathname.split("/")
     .filter((e) => e); //for removing empty elements coming from leading and trailing '/'
-    const vendors = (vendorData.filter((vendor) => vendor.place === location[1]))[0].vendors;
     return (
         <Layout>
             <picture className="block fixed z-[-5] opacity-[0.9]">
